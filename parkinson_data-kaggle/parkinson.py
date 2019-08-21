@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import MinMaxScaler
 
-loc = r'/home/karthik/Downloads/parkinsons_updrs.csv'
+loc = r'data.csv'
 df = pd.read_csv(loc)
 del df['subject#']
 output1 = np.asarray(df['motor_UPDRS'] , dtype = np.float32)
